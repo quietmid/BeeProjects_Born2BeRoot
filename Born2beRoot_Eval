@@ -1,1 +1,44 @@
-<strong>Virtual Machine</strong>
+#Virtual Machine
+A software that simulates a computer system that can run programs as it was a real computer. It allows creation of multiple simulated environments from a single physical hardware system. 
+Creates a controlled environment to test and simulate 
+If somethings breaks inside VM, it doesn’t affect the host machine. 
+#Debian
+	I chose debian because it was suggested in the subject pdf as it was the easier option to use. Moreover, most of the tutorials and guides also use debian. It was easier to set up and manage. 
+#Difference between CentOS and Debian
+Both are linux distribution that are used in a server environment
+Both are free and open source | maintained by volunteers and community
+
+#CentOS
+Update less but more stable
+RPM Package Manager, a binary package manager, so it doesn’t require any compilation or additional processing before installing. 
+#Debian
+Updates more often but isn’t as stable
+Uses APT (advanced packaging tool), a text-based package manager, that provides flexibility and ease to use. More command lines in installation. 
+#Apt
+	The default Debian package manager. It’s text based and run from terminal. Apt offers install, update, remove, fix and add.
+#Aptitude
+	Aptitude requires Apt to install and it offers more flexibility than Apt, it also offers solution when needed. 
+#APPArmor
+	A security module in the linux kernel that allows the system administrator to restrict the capabilities of a program.
+#LVM
+	Logical volume manager provides a way to manage disk storage more flexible than traditional partitioning (dividing HD into separate physical partitions). LVM allows flexibility, efficiency and reliability. 
+  * Flexibility: dynamically resize, add and remove logical columns
+  * Efficiency: automatically allocate unused space from one to another
+  * Reliability: provide layer of abstraction between the data & the physical disk
+#Cron
+	A linux task manager that allows us to execute commands at a certain time. We can automate tasks by just telling cron what command we want at a specific time or every X time.
+#Sudo
+  * superuser do = allow user to run command with the privileges of another user, most commonly the root user. 
+  * it provides better security because the user doesn't have to log in as the root user
+  * Increases accountability, when non-root user run command with sudo, it is logged
+#UFW
+  Uncomplicated firewall: a software application responsible for ensuring that the system adminstrator can manage iptables in a simple way. 
+  + manages incoming and outgoing traffic
+  + block specifice application
+  + create custom firewall rules
+#SSH
+  Secure Shell= a network protocol that allows users to securely access and manage remote machine
+
+Eval Commands
+#UFW Service
+  sudo ufw status
