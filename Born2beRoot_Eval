@@ -41,4 +41,4 @@ Uses APT (advanced packaging tool), a text-based package manager, that provides 
 
 Eval Commands
 #UFW Service
-  sudo ufw status
+  ``sudo ufw status``
