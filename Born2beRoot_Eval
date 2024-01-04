@@ -40,5 +40,68 @@ Uses APT (advanced packaging tool), a text-based package manager, that provides 
   Secure Shell= a network protocol that allows users to securely access and manage remote machine
 
 Eval Commands
-#UFW Service
-  ``sudo ufw status``
+#Check UFW Service
+  sudo ufw status
+  sudo service ufw status
+#Check SSH Service
+  sudo service ssh status
+#Check what operating system
+  uname -v
+#Check User
+  getent group sudo
+  getent group user42
+	user42(group name) : x(Group id): 26(numerical id): jlu (member of that group)
+#Create User
+  sudo adduser username
+#Create group "evaluating"
+  sudo addgroup evaluating
+#Add user to the new group
+  sudo adduser username evaluating
+#Check group
+  getent group evaluating
+#Check Hostname
+  hostname
+#Change this hostname to student42
+  sudo nano /etc/hostname
+  sudo nano /etc/hosts
+  sudo reboot
+#view partitions
+  lsblk
+SUDO
+#checking that sudo is installed
+  which sudo
+#for debian
+  dpkg -s sudo
+#Add new user to sudo group
+  sudo adduser username sudo
+#check
+  getent group sudo
+#show the application of the rules imposed
+  nano /etc/sudoers.d/sudo_config
+#Verify /var/log/sudo/ exist
+  cd /var/log/sudo
+  ls
+  cat sudo_config
+UFW
+#Check UFW
+  dpkg -s ufw
+  sudo service ufw status
+#list of active port for UFW(Mandatory: 4242 | with bonus 4242 and 80)
+  sudo ufw status
+#create a new rule for port 8080
+  sudo ufw allow 8080
+  sudo ufw status numbered
+  sudo ufw delete num_rule (3 & 5)
+SSH
+#Check that the SSH works
+  which ssh
+  sudo service ssh status
+#Log in from terminal
+  ssh jlu@localhost -p 4242
+  su - (should return sorry)
+Script Monitoring
+#Crontab
+  sudo crontab -u root -e
+#Make the script running without changing the script
+  sudo /etc/init.d/cron stop
+  sudo /etc/init.d/cron start
