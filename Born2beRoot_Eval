@@ -38,6 +38,14 @@ Uses APT (advanced packaging tool), a text-based package manager, that provides 
   + create custom firewall rules
 #SSH
   Secure Shell= a network protocol that allows users to securely access and manage remote machine
+#WordPress
+	a content management system focused on the creation of any type of website.
+#Lighttpd
+	A web server designed to be fast, secure, flexible and standard complaint. It is optimized for an environment where speed is a top priority because it consumes less CPU & RAM than other servers.
+#MariaDB
+	A database used for various purpose, such as data warehousing, e-commerce, enterprise-level functions, and logging application.
+#PHP
+	Hypertext Preprocessor, a scripting language primarily designed for web development. It is server-side scripting language, which means it is executed on the server and generates HTML code that is sent to the client's web browser.
 
 Eval Commands
 #Check UFW Service
@@ -105,3 +113,7 @@ Script Monitoring
 #Make the script running without changing the script
   sudo /etc/init.d/cron stop
   sudo /etc/init.d/cron start
+#Check service
+	sudo service lighttpd status
+	sudo service mariadb status
+	php -v OR localhost/info.php
